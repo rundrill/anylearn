@@ -1,0 +1,24 @@
+{
+  "name": "rundrill-anylearn",
+  "displayName": "RunDrill AnyLearn",
+  "version": "0.1.0",
+  "description": "Learn anything inside your AI agent — turns the chat into a saved, plan-based course. Tell it what you want to learn; it asks your goal, level, deadline and the win that matters, then builds an ordered plan of tiny topics and teaches them one at a time. Every topic is grounded in trusted sources it looks up first (so you're not learning from a guess), explained simply, then drilled with 3-5 short exercises and a check. Your plan and progress live on the server, so you can stop and pick up later, run several courses at once, and watch a day-by-day trail. Works for languages, exam cram, certs, coding, chess — anything.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "rundrill",
+    "anylearn",
+    "learning",
+    "study",
+    "tutor",
+    "exam-prep",
+    "spaced-repetition",
+    "language-learning",
+    "self-study",
+    "coach"
+  ]
+}

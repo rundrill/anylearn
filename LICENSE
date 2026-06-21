@@ -1,0 +1,24 @@
+Copyright (c) 2026 Mikhail Podgurskiy / RunDrill. All rights reserved.
+
+PROPRIETARY — NO LICENSE GRANTED.
+
+This repository and all of its contents (including the skill, manifests,
+documentation, and any historical revisions in version control) are proprietary
+and confidential. No right or license is granted to any person to use, copy,
+modify, merge, publish, distribute, sublicense, reverse engineer, or create
+derivative works from any part of this repository, in whole or in part, by any
+means, without the prior express written permission of the copyright holder.
+
+This repository is made publicly visible for the SOLE purpose of enabling
+installation of the RunDrill AnyLearn plugin through supported agent marketplaces
+(Claude, Codex, Gemini/Antigravity). Public visibility, forking, or caching by
+those platforms does NOT grant any license to use the contents beyond what is
+strictly and technically necessary to install and run the plugin against the
+official RunDrill service.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE
+SOFTWARE OR ITS USE.
+
+Licensing inquiries: mikhail@viewflow.io

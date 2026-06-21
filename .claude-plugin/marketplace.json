@@ -1,0 +1,22 @@
+{
+  "name": "rundrill-anylearn",
+  "owner": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com"
+  },
+  "metadata": {
+    "description": "RunDrill AnyLearn — a self-contained marketplace hosting the AnyLearn plugin. AnyLearn turns your AI chat into a saved, plan-based course for anything you want to learn: it plans tiny topics for your goal, grounds each in trusted sources, teaches and drills them, and remembers your progress — backed by the RunDrill MCP engine.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "rundrill-anylearn",
+      "source": {
+        "source": "github",
+        "repo": "rundrill/rundrill-anylearn",
+        "ref": "v0.1.0"
+      },
+      "description": "Learn anything inside your AI agent. Tell it what you want to learn; it interviews you (goal, level, deadline, the win that matters), then generates an ordered plan of very small topics scaled to your timeframe and teaches them one at a time — grounding each topic in trusted sources it looks up first, explaining the single idea simply, then drilling with 3-5 short exercises and a check. Your plan, grounding and progress live on the server, so you can stop and resume, run several courses at once, and see a day-by-day trail. For goals that need it, a course can switch on spaced review, mistake re-drilling, Bronze→Silver→Gold evidence tiers, or strict prerequisites. Works for languages, exam cram, certs, coding, chess — anything."
+    }
+  ]
+}

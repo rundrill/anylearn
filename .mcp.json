@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rundrill-anylearn": {
+      "type": "http",
+      "url": "https://mcp.rundrill.com/anylearn/anylearn"
+    }
+  }
+}

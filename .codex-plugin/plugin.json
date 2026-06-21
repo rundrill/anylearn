@@ -1,0 +1,44 @@
+{
+  "name": "rundrill-anylearn",
+  "version": "0.1.0",
+  "description": "Learn anything inside your AI agent — turns the chat into a saved, plan-based course: it builds an ordered plan of tiny topics for your goal and teaches them one at a time, grounding each in trusted sources first, then drilling and checking. Several courses at once; progress remembered.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com",
+    "url": "https://rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "repository": "https://github.com/rundrill/rundrill-anylearn",
+  "license": "LicenseRef-Proprietary",
+  "keywords": [
+    "rundrill",
+    "anylearn",
+    "learning",
+    "study",
+    "tutor",
+    "exam-prep",
+    "spaced-repetition",
+    "language-learning",
+    "self-study",
+    "coach"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "RunDrill AnyLearn",
+    "shortDescription": "Learn anything — a saved, plan-based course on top of your AI agent that grounds each topic, teaches it, and tracks your progress.",
+    "longDescription": "Tell it what you want to learn and AnyLearn turns the chat into a real course you can come back to. It interviews you briefly — your goal, your level, any deadline, and the one win that means it worked — then generates an ordered plan of very small topics scaled to your timeframe (a crash path for next week, a sustainable path for next year). It teaches one topic at a time: first it looks up trusted sources on the web and grounds the lesson in them (so you're not studying a hallucination), explains the single idea simply, runs 3-5 short drills with feedback, and ends each topic with a check. Your plan, grounding, and progress live on the RunDrill server, so you can stop and resume, keep several courses going at once, and see a day-by-day trail. For goals that need it, the course can switch on spaced review (re-surface what you learned), mistake tracking (re-drill what you got wrong), evidence tiers (Bronze→Silver→Gold), or strict prerequisites. Works for languages, exam cram, certifications, coding, chess — anything.",
+    "developerName": "RunDrill",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://rundrill.com",
+    "defaultPrompt": [
+      "I want to learn something — help me build a plan and start.",
+      "Teach me the next topic in my course.",
+      "Where did we leave off in my course?"
+    ],
+    "brandColor": "#3B7AE0"
+  }
+}

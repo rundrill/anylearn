@@ -1,5 +1,5 @@
 {
-  "name": "rundrill-anylearn",
+  "name": "anylearn",
   "interface": {
     "displayName": "RunDrill AnyLearn"
   },
@@ -8,7 +8,7 @@
       "name": "rundrill-anylearn",
       "source": {
         "source": "url",
-        "url": "https://github.com/rundrill/rundrill-anylearn.git",
+        "url": "https://github.com/rundrill/anylearn.git",
         "ref": "v0.1.0"
       },
       "policy": {

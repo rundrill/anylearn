@@ -34,14 +34,14 @@ This repo is its own marketplace — the catalog lives alongside the plugin.
 
 **Claude Code / Desktop**
 ```
-/plugin marketplace add rundrill/rundrill-anylearn
-/plugin install rundrill-anylearn@rundrill-anylearn
+/plugin marketplace add rundrill/anylearn
+/plugin install rundrill-anylearn@anylearn
 /reload-plugins        # → /anylearn is live
 ```
 
 **Codex**
 ```
-codex plugin marketplace add rundrill/rundrill-anylearn
+codex plugin marketplace add rundrill/anylearn
 codex plugin install rundrill-anylearn
 ```
 

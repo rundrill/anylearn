@@ -1,6 +1,6 @@
 ---
 name: anylearn
-description: "Learn anything inside your AI agent — turns the chat into a saved, plan-based course. When someone wants to learn or study a topic (a language, an exam, a cert, coding, chess, anything), this runs the whole loop FOR them: a short interview (goal, level, deadline, the win that matters), then a generated plan of tiny topics, then teaching one topic at a time — grounded in trusted sources looked up first, explained simply, drilled with 3-5 exercises and a check. Plan and progress live on the server, so you can stop and resume and run several courses at once. Use when a learner wants to start, continue, or review learning something."
+description: "Learn anything inside your AI agent — turns the chat into a saved, plan-based course. When someone wants to learn or study a topic (a language, an exam, a cert, coding, chess, anything), this runs the whole loop FOR them: a short interview (goal, level, deadline, intensity, the win that matters), then a generated plan of tiny topics, then teaching one topic at a time — grounded in trusted sources looked up first, explained simply, drilled with 3-5 exercises and a check. Plan and progress live on the server, so you can stop and resume and run several courses at once. Use when a learner wants to start, continue, or review learning something."
 ---
 
 # AnyLearn
@@ -34,8 +34,8 @@ The server holds the state; you drive it with three tools (all take `course: "an
   - `project_create` — start a course. `slug` (kebab-case, e.g. `spanish-travel`) + `name`.
   - `project_delete` — remove a course (soft delete — confirm first).
   - `profile_set` — save the learner's `chat_language` (asked once, reused across courses). No slug.
-  - `context_set` — save the onboarding profile (`context`: goal, level, deadline, mission, north_star)
-    and mark the course onboarded. Needs `slug`.
+  - `context_set` — save the onboarding profile (`context`: goal, level, deadline, intensity,
+    mission, north_star) and mark the course onboarded. Needs `slug`.
   - `plan_set` — save the plan you generated: `items` (ordered tiny topics) + `capabilities`. Needs `slug`.
   - `ground` — save the trusted `sources` + `notes` you found for a topic, so later visits reuse them.
     Needs `slug` + `item_id`.
@@ -58,11 +58,13 @@ The server holds the state; you drive it with three tools (all take `course: "an
 2. **Language.** If it isn't set, ask which language to coach in and save it once with `record
    {action:"profile_set", chat_language}`. From then on, coach in that language.
 3. Call `next {slug}` and **do exactly what the brief says** — its `kind` is the phase:
-   - `interview` — onboard: ask goal, level, deadline, and the felt-win mission **one question at a
-     time**, then `record {action:"context_set", slug, context}`.
-   - `plan` — run the generator prompt to build an ordered list of **tiny** topics (each teachable in one
-     short lesson with 3-5 drills), and decide which capabilities the goal needs. Save with `record
-     {action:"plan_set", slug, items, capabilities}`.
+   - `interview` — onboard: ask goal, level, deadline, intensity, and the felt-win mission **one short
+     question at a time**. For intensity, offer only: light / steady / intensive / crash. Then
+     `record {action:"context_set", slug, context}`.
+   - `plan` — first tell the learner that building the plan takes 2-5 minutes. Then run the generator
+     prompt to build an ordered list of **tiny** topics (each teachable in one short lesson with 3-5
+     drills), and decide which capabilities the goal needs. Save with `record {action:"plan_set", slug,
+     items, capabilities}`.
    - `teach` — teach **one** topic. If it has no grounding yet, **web-search trusted sources FIRST**
      (official samples, vendor docs, authoritative references — never braindump/answer-leak sites), save
      them with `record {action:"ground", slug, item_id, sources, notes}`, and teach from them, citing.
@@ -90,6 +92,7 @@ none). When one is on, the `teach` brief reminds you what extra to pass to `comp
 ## Rules
 
 - One course, one topic at a time. Keep topics **tiny** and lessons short — one idea, one win.
+- Keep onboarding questions maximally short.
 - **Ground before you teach.** A grounded, cited topic is the whole point; never drill a fact you didn't
   look up. Save only links + your own notes — never paste copyrighted text.
 - Always carry the `slug` on every call after you've picked the course.

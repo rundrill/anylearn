@@ -12,9 +12,9 @@ your plan and progress across sessions.
 ## What it does
 
 You say what you want to learn. AnyLearn asks a few quick questions — your **goal**, your **level**, any
-**deadline**, and the one **win** that means it worked — then generates an ordered plan of very small
-topics, scaled to your timeframe (a crash path for next week, a sustainable path for next year). Then it
-teaches one topic at a time:
+**deadline**, your study **intensity**, and the one **win** that means it worked — then generates an
+ordered plan of very small topics, scaled to your timeframe and pace. Then it teaches one topic at a
+time:
 
 1. **Grounds it** — looks up trusted sources on the web and bases the lesson on them (links + notes are
    saved, so a topic is researched once and reused).

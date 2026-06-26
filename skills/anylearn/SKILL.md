@@ -61,7 +61,7 @@ The server holds the state; you drive it with three tools (all take `course: "an
    - `interview` — onboard: ask goal, level, deadline, intensity, and the felt-win mission **one short
      question at a time**. For intensity, offer only: light / steady / intensive / crash. Then
      `record {action:"context_set", slug, context}`.
-   - `plan` — first tell the learner that building the plan takes 2-5 minutes. Then run the generator
+   - `plan` — run the generator
      prompt to build an ordered list of **tiny** topics (each teachable in one short lesson with 3-5
      drills), and decide which capabilities the goal needs. Save with `record {action:"plan_set", slug,
      items, capabilities}`.

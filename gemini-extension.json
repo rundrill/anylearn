@@ -1,6 +1,6 @@
 {
   "name": "rundrill-anylearn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Learn anything — a saved, plan-based course on top of your AI agent: it plans tiny topics for your goal, grounds each in trusted sources, teaches and drills them, and tracks your progress.",
   "author": {
     "name": "RunDrill",

@@ -1,6 +1,6 @@
 {
   "name": "rundrill-anylearn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Learn anything inside your AI agent — turns the chat into a saved, plan-based course: it builds an ordered plan of tiny topics for your goal and teaches them one at a time, grounding each in trusted sources first, then drilling and checking. Several courses at once; progress remembered.",
   "author": {
     "name": "RunDrill",
